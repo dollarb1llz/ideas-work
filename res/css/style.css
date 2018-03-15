@@ -1,0 +1,252 @@
+html {
+  font-family: monospace;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: white;
+  padding-top: 5.6rem;
+  background-image: url('../img/blueprint-example.jpg');
+  background-position: top;
+  background-size: contain;
+}
+body {
+  line-height: 1.5;
+  margin: 0; padding: 0;
+}
+@media only screen and (max-width: 850px) {
+  body {
+    padding-top: 10rem;
+    font-size: 1.4rem;
+  }
+}
+.container {
+  width: 970px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1050px) {
+  .container {
+    width: 99%;
+  }
+}
+.test {
+  border: 1px solid red;
+}
+
+/*Header*/
+
+header {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  background-color: hsla(0, 0%, 0%, 0.52);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  z-index: 2;
+}
+header div {
+  width: 3rem;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: .8;
+}
+header div img {
+  width: 100%;
+  margin-right: 2rem;
+}
+nav {
+  margin-right: 2rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  font-size: .9rem;
+  font-weight: thin;
+  margin: 1rem;
+}
+nav li a {
+  color: hsla(0, 0%, 100%, 0.59);
+}
+@media only screen and (max-width: 850px) {
+  header div span {
+    display: none;
+  }
+  header div img {
+    width: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  header, nav ul {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  header {
+    padding: 1rem 0;
+    position: absolute;
+  }
+  nav li {
+    width: 10rem;
+    margin: .3rem auto;
+    font-size: 1.5rem;
+  }
+  nav ul {
+    width: 90%;
+    margin: 0 auto;
+  }
+  nav {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header div {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+
+/*Supporting*/
+.color-box {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
+  opacity: .90;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .specific-time {
+    width: 80%;
+  }
+}
+
+/*Background Colors*/
+.neutral-green {
+  background-color: hsla(136, 72%, 53%, 0.8);
+}
+.light-green {
+  background-color: hsla(82, 75%, 49%, 0.8);
+}
+.yellow {
+  background-color: hsl(54, 78%, 51%);
+}
+.orange {
+  background-color: #e2a827;
+}
+.dark-orange {
+  background-color: hsl(27, 81%, 50%)
+}
+.blue {
+  background-color: #2f9ce2;
+}
+.dark-blue {
+  background-color: hsl(225, 82%, 49%)
+}
+.purple {
+  background-color: hsl(259, 86%, 51%);
+}
+.pink {
+  background-color: rgb(182, 31, 217);
+}
+.red {
+  background-color: rgb(221, 19, 34);
+}
+/*Text Colors*/
+.green-color {
+  color: hsl(153, 69%, 48%);
+}
+.red-color {
+  color: hsl(344, 79%, 47%);
+}
+.box {
+  width: 100%;
+}
+.plan {
+  width: 90%;
+  margin: 0 auto;
+}
+#spacearound {
+  justify-content: space-around;
+}
+@media only screen and (max-width: 850px) {
+  .box li {
+    flex-direction: column;
+    text-align: center;
+  }
+  .box li span {
+    margin: .5rem;
+  }
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  position: relative;
+}
+.box li {
+  display: inline-block;
+  background-color: hsla(0, 0%, 0%, 0.13);
+  opacity: .8;
+  padding: 1rem .5rem 1rem .5rem;
+  width: 97%;
+  display: flex;
+  align-items: center;
+}
+.box .title {
+  width: 97%;
+}
+  .box .title span {
+    margin-left: 3rem;
+  }
+.box img {
+  width: 8rem;
+  height: auto;
+  margin: 0 1rem;
+}
+.box .strike {
+  text-decoration: line-through;
+}
+.box .op {
+  opacity: .3;
+}
+h1.title {
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: bold;
+  opacity: .8;
+}
+h2.title {
+  font-size: 1.4rem;
+  margin: 1rem;
+  font-weight: thin;
+  opacity: .7;
+}
+
+/*Footer subjects*/
+
+footer {
+  width: 100%;
+  height: 20rem;
+  background-color: hsla(0, 0%, 0%, 0.68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1rem solid hsla(0, 0%, 0%, 0.04);
+}
+footer span {
+  opacity: .7;
+  padding: 1rem;
+  font-size: .8rem;
+}
